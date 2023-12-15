@@ -1,0 +1,218 @@
+disabled:
+  - id: alefragnani.project-manager
+    uuid: 1b747f06-3789-4ebd-ac99-f1fe430c3347
+  - id: bat-snippets.bat-snippets
+    uuid: ee772b67-80bf-4257-8422-2b982161934d
+  - id: circledev.glsl-canvas
+    uuid: 94b23041-be8e-48e5-9d89-83023985eb74
+  - id: dtoplak.vscode-glsllint
+    uuid: 3718a7c9-0ac8-46dd-81b5-8bc53de038af
+  - id: fernandoescolar.vscode-solution-explorer
+    uuid: 937fa76c-0fd7-4e54-a4d3-d78b07f2d725
+  - id: Gruntfuggly.todo-tree
+    uuid: 261cac81-cd7b-4555-bb41-0c2d2bcd3e70
+  - id: icsharpcode.ilspy-vscode
+    uuid: e71e3bdc-dd75-4005-bc34-5ef5838c84ad
+  - id: johnstoncode.svn-scm
+    uuid: fee8b2f6-52f6-47a2-9aa5-710b4a8872f3
+  - id: kangping.luaide
+    uuid: 72c860b0-860f-4a4e-8d1c-f450c533105d
+  - id: leodevbro.blockman
+    uuid: 4a65c1f4-5251-41fa-925e-5b154e94d6e4
+  - id: njpwerner.autodocstring
+    uuid: 2d6fea35-f68e-461d-9b7b-5cd05be99451
+  - id: ritwickdey.LiveServer
+    uuid: b63c44fd-0457-4696-99e9-dbfdf70d77de
+  - id: TabNine.tabnine-vscode
+    uuid: 75da638c-c45a-44ea-aa3b-8570a3559810
+  - id: yzhang.markdown-all-in-one
+    uuid: 98790d67-10fa-497c-9113-f6c7489207b2
+  - id: zhaofinger.batch-format
+    uuid: 00d99236-9b76-4525-a30d-d58bab62325c
+enabled:
+  - id: A2K.hlsl-preview
+    uuid: 511b9ab6-925d-4688-a838-03b607b24ee2
+  - id: aaron-bond.better-comments
+    uuid: 7a0110bb-231a-4598-aa1b-0769ea46d28b
+  - id: alefragnani.Bookmarks
+    uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
+  - id: aooiu.z-reader
+    uuid: 4fdbbd2a-a3ff-4c9f-9e5c-e46ca008d03e
+  - id: batisteo.vscode-django
+    uuid: 4b41a5a8-170e-4156-b2c0-10efb270abbc
+  - id: bierner.markdown-preview-github-styles
+    uuid: 5cbdf58a-694a-4aba-af08-61d00842eb03
+  - id: bukas.GBKtoUTF8
+    uuid: 51604e47-0bb3-43c0-9226-a74eeca7cd84
+  - id: cgtoolbox-guillaume-jobst.houdinivexhelp
+    uuid: 4fddc1f4-d9cb-4671-8454-f3d0ca3ba005
+  - id: christian-kohler.path-intellisense
+    uuid: a41c1549-4053-44d4-bf30-60fc809b4a86
+  - id: cweijan.vscode-office
+    uuid: 936b1be7-8595-4f76-b102-aa6bb915da73
+  - id: Dart-Code.dart-code
+    uuid: f57f68ea-9ee8-42b5-9a97-041d3e4278c4
+  - id: Dart-Code.flutter
+    uuid: f6c3ec04-6057-4d9c-b997-69cba07a6158
+  - id: DavidAnson.vscode-markdownlint
+    uuid: daf8b44d-8aae-4da2-80c5-1f770219f643
+  - id: dbaeumer.vscode-eslint
+    uuid: 583b2b34-2c1e-4634-8c0b-0b82e283ea3a
+  - id: dfranx.shadered
+    uuid: adb8acbe-c433-4da1-9bdd-94b4a12092b4
+  - id: dionmunk.vscode-notes
+    uuid: 7837012b-af9c-405a-b89c-e0de236a57a2
+  - id: donjayamanne.githistory
+    uuid: 5960f38e-0bbe-4644-8f9c-9c8824e82511
+  - id: donjayamanne.python-environment-manager
+    uuid: 0c9f60fd-5588-42f7-9176-e80c3ae111ec
+  - id: donjayamanne.python-extension-pack
+    uuid: f5188937-53e0-45bb-a16d-61231003fa3b
+  - id: eamodio.gitlens
+    uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
+  - id: EditorConfig.EditorConfig
+    uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
+  - id: esbenp.prettier-vscode
+    uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
+  - id: evanw.glslx-vscode
+    uuid: 7a05bf59-0d2c-4631-8308-186f6b71f6bd
+  - id: foxundermoon.shell-format
+    uuid: 5fb19573-2183-4cf2-b53d-0fb869dae7ae
+  - id: frhtylcn.pythonsnippets
+    uuid: 0ad8c94b-76b2-4033-b703-18596182bfcc
+  - id: galarius.vscode-opencl
+    uuid: f8e30ad2-18ea-4976-834f-f6878b4e2e02
+  - id: gamihitesh.us-snippet
+    uuid: c7e275a9-6ef7-4132-819e-642fd823dfee
+  - id: GitHub.copilot
+    uuid: 23c4aeee-f844-43cd-b53e-1113e483f1a6
+  - id: GitHub.copilot-chat
+    uuid: 7ec7d6e6-b89e-4cc5-a59b-d6c4d238246f
+  - id: GitHub.copilot-labs
+    uuid: 327edf3f-193d-4147-9bd5-e3763272116f
+  - id: GitHub.remotehub
+    uuid: fc7d7e85-2e58-4c1c-97a3-2172ed9a77cd
+  - id: JacquesLucke.blender-development
+    uuid: 78eaf738-6314-4d35-8189-139cfb09702e
+  - id: jeroen-meijer.pubspec-assist
+    uuid: 91c5dadd-29e8-4ced-8d0b-6c4bf5901ee1
+  - id: jorgeserrano.vscode-csharp-snippets
+    uuid: 957cd83d-dc33-4cd0-9550-62c93f227481
+  - id: k--kato.docomment
+    uuid: d1a2eab4-aa6e-4094-93b3-6a007f60bd9d
+  - id: kaiyi.qwerty-learner
+    uuid: 5e092039-f0db-445b-9464-93a8673ab020
+  - id: KevinRose.vsc-python-indent
+    uuid: f3cbfb84-b1e1-40ff-b70f-877253461260
+  - id: kisstkondoros.vscode-gutter-preview
+    uuid: eedfd044-d5ac-4389-973d-3ac1fdb98ad5
+  - id: kleber-swf.unity-code-snippets
+    uuid: e310ade6-fe29-42da-a447-3fe493080a97
+  - id: magicstack.MagicPython
+    uuid: 1f5eb737-5496-44a3-a8a1-36a85eee4979
+  - id: marcelovelasquez.flutter-tree
+    uuid: f0599c22-6504-4e2a-972d-06911ec8429e
+  - id: mateuszchudyk.hexinspector
+    uuid: 4f293f0a-22ab-4296-8a43-67efa108c4e1
+  - id: melmass.vex
+    uuid: 7b128dba-efb4-4c6d-a5c6-ac5fdcfde9f6
+  - id: mqycn.huile8
+    uuid: bacbdb34-5dde-425b-9122-2d61b02b34fe
+  - id: mrjjot.vscode-glsl-linter
+    uuid: ccc45d2d-a735-4b7e-803a-834c4418ee63
+  - id: MS-CEINTL.vscode-language-pack-zh-hans
+    uuid: e4ee7751-6514-4731-9cdb-7580ffa9e70b
+  - id: ms-dotnettools.csdevkit
+    uuid: 7ad42776-8f7e-4214-bf67-4f0b518ef629
+  - id: ms-dotnettools.csharp
+    uuid: d0bfc4ab-1d3a-4487-8782-7cf6027b4fff
+  - id: ms-dotnettools.vscode-dotnet-runtime
+    uuid: 1aab81a1-b3d9-4aef-976b-577d5d90fe3f
+  - id: ms-dotnettools.vscodeintellicode-csharp
+    uuid: 13fef117-0575-4dc5-b573-5cb945a69d0a
+  - id: ms-python.isort
+    uuid: 4ad0ce32-ff3f-49f0-83b5-93e5dc00cfff
+  - id: ms-python.python
+    uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
+  - id: ms-python.vscode-pylance
+    uuid: 364d2426-116a-433a-a5d8-a5098dc3afbd
+  - id: ms-toolsai.jupyter
+    uuid: 6c2f1801-1e7f-45b2-9b5c-7782f1e076e8
+  - id: ms-toolsai.jupyter-keymap
+    uuid: 9f6dc8db-620c-4844-b8c5-e74914f1be27
+  - id: ms-toolsai.jupyter-renderers
+    uuid: b15c72f8-d5fe-421a-a4f7-27ed9f6addbf
+  - id: ms-toolsai.vscode-jupyter-cell-tags
+    uuid: ab4fb32a-befb-4102-adf9-1652d0cd6a5e
+  - id: ms-toolsai.vscode-jupyter-slideshow
+    uuid: e153ca70-b543-4865-b4c5-b31d34185948
+  - id: ms-vscode.azure-repos
+    uuid: 25cfa506-1433-4595-a73f-61666807126d
+  - id: ms-vscode.cmake-tools
+    uuid: 7c889349-8749-43d4-8b5e-08939936d7f4
+  - id: ms-vscode.cpptools
+    uuid: 690b692e-e8a9-493f-b802-8089d50ac1b2
+  - id: ms-vscode.cpptools-extension-pack
+    uuid: 3957b2f6-f086-49b5-a7b4-5da772123130
+  - id: ms-vscode.cpptools-themes
+    uuid: 99b17261-8f6e-45f0-9ad5-a69c6f509a4f
+  - id: ms-vscode.remote-repositories
+    uuid: cf5142f0-3701-4992-980c-9895a750addf
+  - id: Nash.awesome-flutter-snippets
+    uuid: b89a385b-a059-47d8-956f-cd87efc742ea
+  - id: PKief.material-icon-theme
+    uuid: 5db78037-f674-459f-a236-db622c427c5b
+  - id: redhat.vscode-xml
+    uuid: 6703768d-d42f-474e-9f6e-5f288d53f6e8
+  - id: seanwu.vscode-qt-for-python
+    uuid: 3e3d1520-4354-4dd2-8efc-92df8ed8c294
+  - id: sgds.uss
+    uuid: 1b6371ca-6a8a-4286-9044-3b4caf5ad502
+  - id: shinganEuler.vscode-unity-debug
+    uuid: 8ff6ec64-61c9-43ec-a403-f3776e19b318
+  - id: shinhwagk.mkstring
+    uuid: 9fdb2181-1d13-4ef8-ae50-7c8b3db2b69f
+  - id: slevesque.shader
+    uuid: 3a63675f-7987-4cff-a411-d4a9568f560c
+  - id: streetsidesoftware.code-spell-checker
+    uuid: f6dbd813-b0a0-42c1-90ea-10dde9d925a7
+  - id: stuart.unique-window-colors
+    uuid: 85e93d09-9c05-4473-867f-8daaf1bc9e75
+  - id: suvam0451.sleeping-forest-ue4
+    uuid: ad855e9e-a12e-42c4-9117-e0effc592351
+  - id: suweitao.c3-plugin-snippets
+    uuid: 4cba223a-ba64-46d4-841a-20d62a579c3e
+  - id: Tobiah.unity-tools
+    uuid: df7dc071-4d1a-488b-9984-2f4fc42331f3
+  - id: twxs.cmake
+    uuid: 2be7cf14-2603-402e-9771-fd79df83cdf8
+  - id: usernamehw.errorlens
+    uuid: 9d8c32ab-354c-4daf-a9bf-20b633734435
+  - id: VisualStudioExptTeam.intellicode-api-usage-examples
+    uuid: 9fa2a00e-3bfa-4c2a-abc4-a865bb2b5cf3
+  - id: VisualStudioExptTeam.vscodeintellicode
+    uuid: 876e8f93-74d0-4f4f-91b7-34a09f19f444
+  - id: visualstudiotoolsforunity.vstuc
+    uuid: 17d96133-c9cc-4a9b-8788-7de26979bcdd
+  - id: vscode-icons-team.vscode-icons
+    uuid: 9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a
+  - id: wayou.vscode-todo-highlight
+    uuid: 97a08c5f-6667-4242-a5c5-045dfb6bd4b9
+  - id: wholroyd.jinja
+    uuid: c941a679-d500-46a8-b2a9-208063125901
+  - id: xaver.clang-format
+    uuid: 04208f17-8aed-4d49-b0a2-fbce829efbeb
+  - id: xyz.local-history
+    uuid: 25adc849-5c3a-4dca-95b3-55a6461077ee
+  - id: Yaji.cocos-effect
+    uuid: 89042180-a1a8-483e-b205-2e8034575021
+  - id: YclepticStudios.unity-snippets
+    uuid: ebb13f5c-e0ec-4bf9-a6ca-983340e3a2e8
+  - id: yzhang.dictionary-completion
+    uuid: 16704358-ce51-4e36-a83d-e9b5fb9e9a64
+  - id: Zlorn.svn-helper
+    uuid: f1566c38-1ab7-43c7-9430-49cc83cc169f
+  - id: zokugun.cron-tasks
+    uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb
+  - id: zxh404.vscode-proto3
+    uuid: 1d3d1fb2-0d8f-47ed-bfce-990b8ddfc9d8
