@@ -1,0 +1,23 @@
+{
+    "workbench.colorCustomizations": {
+        "[Monokai]": {
+            "editor.wrapTabs": true,
+            "editor.selectionBackground": "#55d35f4f",
+            "editor.lineHighlightBackground": "#1073cf2d",
+            "editorBracketMatch.background": "#e4393c",
+            "editorCursor.foreground": "#f7f4ef",
+            "activityBar.background": "#000000",
+            "activityBar.foreground": "#ffffff",
+            "editor.findMatchBackground": "#18cf274f",
+            "editor.findMatchHighlightBackground": "#18cf274f",
+            "editorLineNumber.foreground": "#139107",
+            "sideBar.background": "#000000",
+            "statusBar.debuggingBackground": "#000000",
+            "terminal.foreground": "#26ad04",
+            "editor.lineHighlightBorder": "#9fced11f"
+        },
+        "activityBar.background": "#312D22",
+        "titleBar.activeBackground": "#443F30",
+        "titleBar.activeForeground": "#FAF9F8"
+    }
+}

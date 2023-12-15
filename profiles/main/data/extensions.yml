@@ -36,8 +36,8 @@ enabled:
     uuid: 7a0110bb-231a-4598-aa1b-0769ea46d28b
   - id: alefragnani.Bookmarks
     uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
-  - id: aooiu.z-reader
-    uuid: 4fdbbd2a-a3ff-4c9f-9e5c-e46ca008d03e
+  - id: amlovey.shaderlabvscode
+    uuid: null
   - id: batisteo.vscode-django
     uuid: 4b41a5a8-170e-4156-b2c0-10efb270abbc
   - id: bierner.markdown-preview-github-styles
@@ -178,8 +178,6 @@ enabled:
     uuid: f6dbd813-b0a0-42c1-90ea-10dde9d925a7
   - id: stuart.unique-window-colors
     uuid: 85e93d09-9c05-4473-867f-8daaf1bc9e75
-  - id: suvam0451.sleeping-forest-ue4
-    uuid: ad855e9e-a12e-42c4-9117-e0effc592351
   - id: suweitao.c3-plugin-snippets
     uuid: 4cba223a-ba64-46d4-841a-20d62a579c3e
   - id: Tobiah.unity-tools

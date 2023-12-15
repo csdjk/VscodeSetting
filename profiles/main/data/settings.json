@@ -22,7 +22,6 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "http.proxy": "http://127.0.0.1:10809",
     "http.proxyStrictSSL": false,
     "files.exclude": {
         "**/.svn": true,
@@ -131,22 +130,23 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Monokai",
     "workbench.colorCustomizations": {
-        "editor.wrapTabs": true,
-        "editor.selectionBackground": "#18cf274f",
-        "editor.lineHighlightBackground": "#1073cf2d",
-        "editorBracketMatch.background": "#e4393c",
-        "editorCursor.foreground": "#f7f4ef",
-        "activityBar.background": "#000000",//
-        "activityBar.foreground": "#ffffff",//活动栏前景色（例如用于图标）
-        "editor.findMatchBackground": "#18cf274f",
-        "editor.findMatchHighlightBackground": "#18cf274f",
-        "editorLineNumber.foreground": "#139107",
-        "sideBar.background": "#0a0a0a",
-        // "sideBar.border": "#ff0000",
-        "statusBar.debuggingBackground": "#000000",
-        "terminal.foreground": "#26ad04",
-        "editor.lineHighlightBorder": "#9fced11f",
-        "activityBar.activeBackground": "#02105f",
+        "[Monokai]": {
+            "editor.wrapTabs": true,
+            "editor.selectionBackground": "#55d35f4f",
+            "editor.lineHighlightBackground": "#1073cf2d",
+            "editorBracketMatch.background": "#e4393c",
+            "editorCursor.foreground": "#f7f4ef",
+            "activityBar.background": "#000000", //活动栏背景颜色。
+            "activityBar.foreground": "#ffffff", //活动栏前景色（例如用于图标）
+            "editor.findMatchBackground": "#18cf274f",
+            "editor.findMatchHighlightBackground": "#18cf274f",
+            "editorLineNumber.foreground": "#139107",
+            "sideBar.background": "#000000",
+            "statusBar.debuggingBackground": "#000000",
+            "terminal.foreground": "#26ad04",
+            "editor.lineHighlightBorder": "#9fced11f",
+            // "activityBar.activeBackground": "#02105f",
+        },
     },
     "editor.tokenColorCustomizations": {
         // "comments": "#9ea023da",      //注释
@@ -417,5 +417,6 @@
     "dotnet.preferCSharpExtension": false,
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
-    }
+    },
+    "http.proxy": "http://127.0.0.1:10809"
 }

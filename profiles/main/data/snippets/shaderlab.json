@@ -1,0 +1,340 @@
+{
+    // Place your snippets for shaderlab here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    "Unity HLSL": {
+        "prefix": "hlsl",
+        "body": [
+            "Shader \"lcl/SimpleColor\"",
+            "{",
+            "\tProperties",
+            "\t{",
+            "\t\t_MainTex (\"Texture\", 2D) = \"white\" {}",
+            "\t\t_Color (\"Color\", Color) = (1,1,1,1)",
+            "\t}",
+            "\tSubShader",
+            "\t{",
+            "\t\tPass",
+            "\t\t{",
+            "\t\tTags ",
+            "\t\t{",
+            "\t\t\t\"RenderType\" = \"Opaque\"",
+            "\t\t\t\"Queue\" = \"Geometry\"",
+            "\t\t}",
+            "",
+            "\t\tHLSLPROGRAM",
+            "\t\t#pragma vertex vert",
+            "\t\t#pragma fragment frag",
+            "\t\t#pragma target 3.0",
+            "\t\t#include \"Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl\"",
+            "\t\t//传入顶点着色器的数据",
+            "\t\tstruct a2v",
+            "\t\t{",
+            "\t\t\tfloat4 vertex : POSITION;",
+            "\t\t\tfloat2 uv : TEXCOORD0;",
+            "\t\t};",
+            "\t\t//传入片元着色器的数据",
+            "\t\tstruct v2f",
+            "\t\t{",
+            "\t\t\tfloat4 pos : SV_POSITION;",
+            "\t\t\tfloat2 uv : TEXCOORD0;",
+            "\t\t};",
+            "\t\tTEXTURE2D(_MainTex);",
+            "\t\tSAMPLER(sampler_MainTex);",
+            "\t\tCBUFFER_START(UnityPerMaterial)",
+            "\t\tfloat4 _Color;",
+            "\t\tCBUFFER_END",
+            "\t\t//顶点着色器",
+            "\t\tv2f vert(a2v v)",
+            "\t\t{",
+            "\t\t\tv2f o;",
+            "\t\t\tVertexPositionInputs vertexInput = GetVertexPositionInputs(v.vertex.xyz);",
+            "\t\t\to.pos = vertexInput.positionCS;",
+            "\t\t\treturn o;",
+            "\t\t}",
+            "",
+            "\t\t//片元着色器",
+            "\t\thalf4 frag(v2f i) : SV_Target",
+            "\t\t{",
+            "\t\t\thalf4 color = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv).rgb;",
+            "\t\t\treturn color;",
+            "\t\t}",
+            "\t\tENDHLSL",
+            "\t\t}",
+            "\t}",
+            "\tFallBack \"Hidden/Universal Render Pipeline/FallbackError\"",
+            "}"
+        ],
+        "description": "Log output to console"
+    },
+    "Unity3D Shaderlab": {
+        "prefix": "shaderlab",
+        "body": [
+            "Shader \"${1:New Shader}\"",
+            "{",
+            "\tProperties",
+            "\t{",
+            "\t\t_MainTex (\"Texture\", 2D) = \"white\" {}",
+            "\t}",
+            "\tSubShader",
+            "\t{",
+            "\t\tTags { \"RenderType\"=\"${2:Opaque}\" }\n",
+            "\t\tPass",
+            "\t\t{",
+            "\t\t\t$3",
+            "\t\t}",
+            "\t}",
+            "}"
+        ],
+        "description": "Unity3D Shaderlab"
+    },
+    "Unity3D SurfaceShader": {
+        "prefix": "surfaceShader",
+        "body": [
+            "Shader \"${1:New Shader}\"",
+            "{",
+            "\tProperties",
+            "\t{\n",
+            "\t}",
+            "\tSubShader",
+            "\t{",
+            "\t\tTags { \"RenderType\"=\"${2:Opaque}\" \"Queue\"=\"${3:Geometry}\" }\n",
+            "\t\tCGPROGRAM",
+            "\t\t#pragma surface surf Standard\n",
+            "\t\tstruct Input{\n",
+            "\t\t};\n\n",
+            "\t\tvoid surf(Input IN,inout SurfaceOutput o) {\n",
+            "\t\t}",
+            "\t\tENDCG",
+            "\t}",
+            "\tFallBack \"Diffuse\"",
+            "}"
+        ],
+    },
+    "CGPROGRAM": {
+        "prefix": "cg",
+        "body": [
+            "CGPROGRAM",
+            "#pragma vertex vert",
+            "#pragma fragment frag\n",
+            "#include \"UnityCG.cginc\"\n",
+            "struct appdata",
+            "{",
+            "\tfloat4 vertex : POSITION;",
+            "\tfloat2 uv : TEXCOORD0;",
+            "};\n",
+            "struct v2f",
+            "{",
+            "\tfloat2 uv : TEXCOORD0;",
+            "\tfloat4 vertex : SV_POSITION;",
+            "};\n",
+            "sampler2D _MainTex;\n",
+            "v2f vert(appdata v)",
+            "{",
+            "\tv2f o;",
+            "\to.vertex = UnityObjectToClipPos(v.vertex);",
+            "\to.uv = TRANSFORM_TEX(v.uv, _MainTex);\n",
+            "\treturn o;",
+            "}\n",
+            "fixed4 frag(v2f i) : SV_Target",
+            "{",
+            "\t// sample the texture",
+            "\tfixed4 col = tex2D(_MainTex, i.uv);",
+            "\treturn col;",
+            "}",
+            "ENDCG"
+        ],
+        "description": "Unity3D Shaderlab CGPROGRAM"
+    },
+    "Multi Lighting Control": {
+        "prefix": "multi_compile_fwdbase",
+        "body": [
+            "multi_compile_fwdbase",
+        ],
+        "description": "instructs Unity to compile all variants necessary for forward base rendering"
+    },
+    "Shadow Caster": {
+        "prefix": "multi_compile_shadowcaster",
+        "body": [
+            "multi_compile_shadowcaster",
+        ],
+        "description": "ensures that the shader compiles all necessary variants required for shadow casting"
+    },
+    "SHADOW_ATTENUTATION": {
+        "prefix": "SHADOW_ATTENUATION",
+        "body": [
+            "SHADOW_ATTENUATION($0)",
+        ],
+        "description": "a macro that returns a value between 0 and 1, where 0 indicates no shadow and 1 is fully shadowed"
+    },
+    "Camera Depth Texture": {
+        "prefix": "_CameraDepthTexture",
+        "body": "_CameraDepthTexture",
+        "description": "the depth buffer globally available that Unity provides"
+    },
+    "Linear Eye Depth": {
+        "prefix": "LinearEyeDepth",
+        "body": "LinearEyeDepth($0)",
+        "description": " convert the raw value to the linear depth"
+    },
+    "SAMPLE_DEPTH_TEXTURE": {
+        "prefix": "SAMPLE_DEPTH_TEXTURE",
+        "body": "SAMPLE_DEPTH_TEXTURE(_CamperaDepthTexture,${float2:uv})",
+        "description": "a macro that for sampling the background depth"
+    },
+    "UNITY_Z_0_FAR_FROM_CLIPSPACE": {
+        "prefix": "UNITY_Z_0_FAR_FROM_CLIPSPACE",
+        "body": "UNITY_Z_0_FAR_FROM_CLIPSPACE($0)",
+        "description": "a macro that takes the Z component of screenPos—which is the interpolated clip space depth—and converts it to linear depth"
+    },
+    "Check Top-To-Bottom": {
+        "prefix": "CheckTopToBottom",
+        "body": [
+            "#if Unity_UV_STARTS_AT_TOP",
+            "\tif(_CameraDepthTexture_TexelSize.y <0){",
+            "\t\tuv.y = 1 - uv.y;",
+            "\t}",
+            "#endif"
+        ],
+        "description": "check if our platforms work with top-to-bottom coordinates"
+    },
+    "SHADOW_CASTER_FRAGMENT": {
+        "prefix": "SHADOW_CASTER_FRAGMENT",
+        "body": "SHADOW_CASTER_FRAGMENT($0)",
+        "description": "shadow caster"
+    },
+    "UnityApplyLinearShadowBias": {
+        "prefix": "UnityApplyLinearShadowBias",
+        "body": "UnityApplyLinearShadowBias($0);",
+        "description": "Applying the bias prevents artifacts from appearing on the surface"
+    },
+    "Toggle": {
+        "prefix": "Toggle",
+        "body": "Toggle",
+        "description": "Make a toggle visual on the panel"
+    },
+    "UNITY_PROJ_COORD": {
+        "prefix": "UNITY_PROJ_COORD",
+        "body": "UNITY_PROJ_COORD($0)",
+        "description": "处理平台差异，一般直接返回输入的值"
+    },
+    // Custom
+    "renderdoc": {
+        "prefix": "renderdoc debug",
+        "body": "#pragma enable_d3d11_debug_symbols",
+        "description": "Renderdoc Debug"
+    },
+    // simple shader
+    "simpleShader": {
+        "prefix": "simple shader",
+        "body": [
+            "Shader \"lcl/NewUnlitShader\"",
+            "{",
+            "Properties",
+            "{",
+            "    _MainTex (\"Texture\", 2D) = \"white\" { }",
+            "    _Color (\"Color Tint\", Color) = (1, 1, 1, 1)",
+            "}",
+            "SubShader",
+            "{",
+            "    Tags { \"RenderType\" = \"Opaque\" \"Queue\" = \"Geometry\" }",
+            "Pass",
+            "{",
+            "Tags { \"LightMode\" = \"ForwardBase\" }",
+            "CGPROGRAM",
+            "#pragma vertex vert",
+            "#pragma fragment frag",
+            "#include \"Lighting.cginc\"",
+            "sampler2D _MainTex;",
+            "float4 _MainTex_ST;",
+            "half4 _Color;",
+            "struct a2v",
+            "{",
+            "    float4 vertex : POSITION;",
+            "    float3 normal : NORMAL;",
+            "    float2 uv : TEXCOORD0;",
+            "};",
+            "    struct v2f",
+            "   {",
+            "        float4 pos : SV_POSITION;",
+            "        float2 uv : TEXCOORD0;",
+            "        float3 normalWS : NORMAL;",
+            "        float3 positionWS : TEXCOORD1;",
+            "       float3 viewWS : TEXCOORD2;",
+            "    };",
+            "    v2f vert(a2v v)",
+            "    {",
+            "        v2f o;",
+            "       o.pos = UnityObjectToClipPos(v.vertex);",
+            "       o.normalWS = UnityObjectToWorldNormal(v.normal);",
+            "        o.positionWS = mul(unity_ObjectToWorld, v.vertex).xyz;",
+            "        o.viewWS = UnityWorldSpaceViewDir(o.positionWS);",
+            "        o.uv = TRANSFORM_TEX(v.uv, _MainTex);",
+            "        return o;",
+            "    }",
+            "    half4 frag(v2f i) : SV_Target",
+            "    {",
+            "       half3 col = tex2D(_MainTex, i.uv);",
+            "       float3 normalWS = normalize(i.normalWS);",
+            "        float3 lightWS = normalize(UnityWorldSpaceLightDir(i.positionWS));",
+            "        float3 viewWS = normalize(i.viewWS);",
+            "        float NdotL = saturate(dot(normalWS, lightWS));",
+            "        float NdotV = saturate(dot(normalWS, viewWS));",
+            "       half3 resCol = col * NdotL * _Color.rgb;",
+            "        return half4(resCol, 1.0);",
+            "    }",
+            "    ENDCG",
+            "}",
+            "}",
+            "FallBack \"Reflective/VertexLit\"",
+            "}",
+        ]
+    },
+
+
+    // 
+    "///": {
+		"prefix": "///",
+		"body": [
+			"// ================================ $0 ================================",
+		],
+		"description": "注释标题"
+	},
+
+    "if defined": {
+		"prefix": "ifdefined",
+		"body": [
+            "#if defined(SWITCH_ON)",
+            "#else",
+            "#endif",
+		],
+		"description": "defined"
+	},
+
+    "toggle": {
+		"prefix": "toggle",
+		"body": [
+            "[Toggle(_SWITCH)] _SWITCH (\"Toggle\", float) = 0",
+		],
+		"description": "[Toggle(_SWITCH)]"
+	},
+
+
+    "cbuffer": {
+		"prefix": "cbuffer",
+		"body": [
+            "CBUFFER_START(UnityPerMaterial)\nCBUFFER_END",
+		],
+		"description": "CBUFFER_START(UnityPerMaterial)"
+	},
+
+    "cbufferUnity": {
+		"prefix": "cbuffer_unity",
+		"body": [
+            "CBUFFER_START(UnityPerDraw)\nCBUFFER_END",
+		],
+		"description": "CBUFFER_START(UnityPerMaterial)"
+	},
+}
